@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Becas 2027 → entrada 2028</title>
+  <meta name="description" content="Plan de becas internacionales para un bachiller colombiano graduado en noviembre 2026: postular en 2027 y entrar en 2028." />
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --paper: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e2e0d8;
+      --accent: #0b5fff;
+      --warn-bg: #fff6e5;
+      --warn-border: #f0c36d;
+      --chip: #eef2ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.85rem; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+    .summary { color: var(--muted); margin: 0 0 1.5rem; max-width: 70ch; }
+    .callout {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1.75rem;
+    }
+    .callout strong { display: block; margin-bottom: 0.35rem; }
+    h2 {
+      font-size: 1.25rem;
+      margin: 2rem 0 0.85rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
+    ol.timeline { margin: 0; padding-left: 1.2rem; }
+    ol.timeline li { margin-bottom: 0.85rem; }
+    ol.timeline strong { display: block; }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.9rem;
+    }
+    .filters button {
+      border: 1px solid var(--border);
+      background: var(--paper);
+      border-radius: 999px;
+      padding: 0.4rem 0.85rem;
+      cursor: pointer;
+      font: inherit;
+      color: var(--text);
+    }
+    .filters button[aria-pressed="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 820px;
+      font-size: 0.92rem;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 0.75rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: #fafaf7;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+    }
+    tr:last-child td { border-bottom: none; }
+    .caption { color: var(--muted); font-size: 0.88rem; margin: 0.6rem 0 0; }
+    ul.check { list-style: none; padding: 0; margin: 0; }
+    ul.check li {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.7rem 0.9rem;
+      margin-bottom: 0.45rem;
+      display: flex;
+      gap: 0.65rem;
+      align-items: flex-start;
+    }
+    ul.check .box {
+      width: 1.05rem;
+      height: 1.05rem;
+      border: 1.5px solid #999;
+      border-radius: 4px;
+      flex: 0 0 auto;
+      margin-top: 0.2rem;
+    }
+    ul.check .meta { color: var(--muted); font-size: 0.85rem; }
+    .rows { display: grid; gap: 0.5rem; }
+    .row {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.75rem 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: 999px;
+      padding: 0.2rem 0.6rem;
+      background: var(--chip);
+    }
+    .pill.danger { background: #ffe5e5; color: #9b1c1c; }
+    .pill.warn { background: #fff1cc; color: #8a5a00; }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.65rem;
+    }
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      font-weight: 600;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+    footer {
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Plan becas: postular en 2027 → entrar en 2028</h1>
+    <p class="summary">Calendario para un bachiller colombiano graduado en noviembre 2026. Fechas por patrón de ciclos recientes; confirmar en cada página oficial cuando publiquen 2027/28.</p>
+
+    <div class="callout">
+      <strong>Importante</strong>
+      Estas fechas son estimadas por el patrón anual. Turquía, Rumania, Taiwán y Brunei se postulan a inicios de 2028 para empezar a fines de 2028. Solo MEXT, GKS, PEC‑G y las rondas tempranas EE. UU./Corea caen de lleno en 2027.
+    </div>
+
+    <h2 id="cronograma">Cronograma por trimestre</h2>
+    <ol class="timeline">
+      <li><strong>Abr–jun 2027 · Japón</strong> Convocatoria MEXT vía Embajada/ICETEX. Exámenes e entrevista en junio–julio típicos.</li>
+      <li><strong>Jun–ago 2027 · Brasil</strong> PEC‑G: matrícula gratis (sin manutención). Tener Celpe‑Bras listo antes.</li>
+      <li><strong>Ago–nov 2027 · EE. UU. y Corea temprano</strong> Abre Common App (~1 ago). ED/EA ~1 nov. GKS sep–oct. KAIST/Yonsei rondas tempranas.</li>
+      <li><strong>Nov 2027 – ene 2028 · Hungría + RD EE. UU.</strong> Stipendium Hungaricum + nominación ICETEX. Regular Decision EE. UU. ~1–5 ene 2028.</li>
+      <li><strong>Ene–mar 2028 · Turquía y otros</strong> Türkiye Bursları 10 ene–20 feb. Rumania, Taiwán MOE, Brunei. POSTECH/Yonsei regular.</li>
+    </ol>
+
+    <h2 id="tabla">Tabla de programas</h2>
+    <div class="filters" role="group" aria-label="Filtrar por periodo">
+      <button type="button" data-period="todo" aria-pressed="true">Todo</button>
+      <button type="button" data-period="abr-jun" aria-pressed="false">Abr–jun 2027</button>
+      <button type="button" data-period="jul-sep" aria-pressed="false">Jul–sep 2027</button>
+      <button type="button" data-period="oct-dic" aria-pressed="false">Oct–dic 2027</button>
+      <button type="button" data-period="ene-mar28" aria-pressed="false">Ene–mar 2028</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Programa</th>
+            <th>Postular</th>
+            <th>Inicio</th>
+            <th>Cobertura</th>
+            <th>Requisitos clave</th>
+            <th>Confianza</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p class="caption">Estado de fechas: estimado (patrón), no verificado en convocatoria 2027/28 publicada.</p>
+
+    <h2 id="preparar">Preparar durante 2027</h2>
+    <ul class="check">
+      <li><span class="box" aria-hidden="true"></span><div>Diploma y notas apostillados + traducción jurada<br><span class="meta">desde nov 2026</span></div></li>
+      <li><span class="box" aria-hidden="true"></span><div>Pasaporte vigente</div></li>
+      <li><span class="box" aria-hidden="true"></span><div>Inglés B2+ (TOEFL / IELTS / Duolingo) — sirve para casi todo</div></li>
+      <li><span class="box" aria-hidden="true"></span><div>Japonés básico si apunta a MEXT<br><span class="meta">abr–may 2027</span></div></li>
+      <li><span class="box" aria-hidden="true"></span><div>Coreano / TOPIK si apunta a GKS (puntos extra)<br><span class="meta">antes de sep 2027</span></div></li>
+      <li><span class="box" aria-hidden="true"></span><div>Celpe‑Bras si apunta a PEC‑G Brasil<br><span class="meta">antes de jun 2027</span></div></li>
+      <li><span class="box" aria-hidden="true"></span><div>Promedio alto (≥4.0 / top 20% según programa)</div></li>
+      <li><span class="box" aria-hidden="true"></span><div>2 cartas de profesores + ensayos / plan de estudios</div></li>
+      <li><span class="box" aria-hidden="true"></span><div>Revisar ICETEX SIORI cada mes<br><span class="meta">todo 2027</span></div></li>
+      <li><span class="box" aria-hidden="true"></span><div>CSS Profile listo para EE. UU. / NYUAD (ago 2027+)</div></li>
+    </ul>
+    <p class="caption">Estado del checklist al armar esta página (29 oct 2026): pendiente de avanzar con la familia.</p>
+
+    <h2 id="previo">Estado previo (ciclo 2026–27)</h2>
+    <p>No es el foco de esta página, pero ya estaban abiertas o cerrando para entrar en 2027:</p>
+    <div class="rows">
+      <div class="row"><div><strong>UBC International Scholars</strong><br><span class="meta">Cierra 15 nov 2026</span></div><span class="pill danger">Urgente</span></div>
+      <div class="row"><div><strong>KAIST / Notre Dame / Türkiye / EARTH</strong><br><span class="meta">Plazos nov 2026 – feb 2027</span></div><span class="pill warn">Ciclo actual</span></div>
+      <div class="row"><div><strong>GKS 2027</strong><br><span class="meta">Ya cerró sep 2026</span></div><span class="pill">Cerrada</span></div>
+    </div>
+
+    <h2 id="enlaces">Enlaces oficiales</h2>
+    <div class="links">
+      <a href="https://www.colombia.emb-japan.go.jp/itpr_es/pregrado.html" rel="noopener" target="_blank">MEXT — Embajada Japón Colombia</a>
+      <a href="https://www.studyinkorea.go.kr" rel="noopener" target="_blank">GKS — Study in Korea</a>
+      <a href="https://www.turkiyeburslari.gov.tr/" rel="noopener" target="_blank">Türkiye Bursları</a>
+      <a href="https://stipendiumhungaricum.hu" rel="noopener" target="_blank">Stipendium Hungaricum</a>
+      <a href="https://www.icetex.gov.co/SIORI_WEB/Convocatorias.aspx?aplicacion=1&amp;vigente=true" rel="noopener" target="_blank">ICETEX SIORI</a>
+      <a href="https://admission.kaist.ac.kr/intl-undergraduate" rel="noopener" target="_blank">KAIST International</a>
+      <a href="https://www.commonapp.org" rel="noopener" target="_blank">Common App</a>
+      <a href="https://www.gov.br/mre/pt-br/assuntos/cultura-e-educacao/temas-educacionais/programas-de-estudo-para-estrangeiros/pec-g/processo-seletivo" rel="noopener" target="_blank">PEC‑G Brasil</a>
+    </div>
+
+    <footer>
+      Fuente personal · fechas estimadas por patrón anual · no es una convocatoria oficial.
+    </footer>
+  </main>
+  <script>
+    const DATA = [
+      { periodo: "abr-jun", programa: "MEXT Japón (pregrado)", postular: "Aprox. abr–may 2027 (cierre may–jun)", inicio: "Abr 2028 (+ año preparatorio)", cobertura: "Completa: matrícula, ~¥117.000/mes, pasaje", requisitos: "Promedio ≥4.0, Saber 11 ≥300 (65 mate), inglés B2, examen de japonés, edad típica 17–24", confianza: "Estimado (patrón anual)" },
+      { periodo: "jul-sep", programa: "PEC‑G Brasil", postular: "Aprox. jun–ago 2027 (edital a mitad de año)", inicio: "2028 (o 2029 si hay año de portugués)", cobertura: "Matrícula gratis en universidad federal; manutención NO", requisitos: "Celpe‑Bras, bachillerato, prueba de capacidad económica", confianza: "Estimado (fechas varían)" },
+      { periodo: "jul-sep", programa: "GKS Corea (pregrado)", postular: "Aprox. sep–oct 2027 (vía Embajada)", inicio: "Mar 2028 (1 año de coreano; carrera ~2029)", cobertura: "Completa: matrícula, estipendio, pasaje, año de idioma", requisitos: "Menor de 25, promedio ≥80% o top 20%, solo nacionalidad colombiana", confianza: "Estimado (patrón estable)" },
+      { periodo: "oct-dic", programa: "EE. UU. / NYU Abu Dhabi (Common App)", postular: "Abre ~1 ago 2027 · ED/EA ~1 nov 2027 · RD ~1–5 ene 2028", inicio: "Ago/sep 2028", cobertura: "Amherst/Bowdoin 100% necesidad; Notre Dame Pathways; NYUAD ayuda generosa", requisitos: "Common App, CSS Profile, inglés, ensayos, cartas; SAT según política del año", confianza: "Estimado (alta confianza)" },
+      { periodo: "oct-dic", programa: "KAIST / Yonsei UIC (rondas tempranas)", postular: "KAIST aprox. oct 2027–ene 2028 · Yonsei temprana oct–dic 2027", inicio: "Otoño 2028 (verificar ronda)", cobertura: "KAIST: matrícula + estipendio típico · Yonsei: beca matrícula mérito", requisitos: "Inglés (TOEFL/IELTS), perfil STEM fuerte en KAIST", confianza: "Estimado" },
+      { periodo: "oct-dic", programa: "Stipendium Hungaricum", postular: "Aprox. nov 2027 – mediados ene 2028 (+ nominación ICETEX)", inicio: "Sep 2028", cobertura: "Matrícula, mensualidad, alojamiento, seguro", requisitos: "Postulación en línea + nominación ICETEX; requisitos por universidad", confianza: "Estimado" },
+      { periodo: "ene-mar28", programa: "Türkiye Bursları", postular: "Aprox. 10 ene – 20 feb 2028 (NO en 2027)", inicio: "Sep 2028 (+ año de turco)", cobertura: "Completa: matrícula, mensualidad, alojamiento, seguro, pasaje", requisitos: "Menor de 21, promedio ≥70% (90% medicina)", confianza: "Estimado (alta confianza)" },
+      { periodo: "ene-mar28", programa: "Rumania MAE / Taiwán MOE / Brunei BDGS", postular: "Rumania ene–mar 2028 · Taiwán ~1 feb–31 mar 2028 · Brunei dic 2027–feb 2028", inicio: "Ago/sep/oct 2028", cobertura: "Rumania completa · Taiwán casi total · Brunei completa (verificar elegibilidad)", requisitos: "Documentos apostillados; inglés; Taiwán pide admisión universitaria aparte", confianza: "Estimado" },
+      { periodo: "ene-mar28", programa: "POSTECH / Yonsei regular", postular: "Fines 2027 – inicios 2028 (POSTECH); Yonsei regular ene–abr 2028", inicio: "2028", cobertura: "Matrícula + manutención (POSTECH) o beca matrícula (Yonsei)", requisitos: "STEM / inglés", confianza: "Estimado" }
+    ];
+
+    const tbody = document.getElementById("rows");
+    function render(period) {
+      const rows = DATA.filter((r) => period === "todo" || r.periodo === period);
+      tbody.innerHTML = rows.map((r) => `<tr>
+        <td>${r.programa}</td>
+        <td>${r.postular}</td>
+        <td>${r.inicio}</td>
+        <td>${r.cobertura}</td>
+        <td>${r.requisitos}</td>
+        <td>${r.confianza}</td>
+      </tr>`).join("");
+    }
+    render("todo");
+    document.querySelectorAll(".filters button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".filters button").forEach((b) => b.setAttribute("aria-pressed", "false"));
+        btn.setAttribute("aria-pressed", "true");
+        render(btn.dataset.period);
+      });
+    });
+  </script>
+</body>
+</html>
